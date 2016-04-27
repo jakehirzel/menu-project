@@ -1,7 +1,18 @@
+
+/* To keep page scroll anchors from going under the sticky nav */
 .anchor {
     padding-top: 60px;
 }
+
+/* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav */
 .jumbotron {
     height: 100vh;
     padding-top: 50px;
+}
+
+/* Class to vertically cetner things in the viewport */
+.vcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
