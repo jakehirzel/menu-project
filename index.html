@@ -22,6 +22,7 @@
         }
         .anchor {
             padding-top: 60px;
+            visibility: hidden;
         }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -40,20 +41,25 @@
 Content must include portfolio of work with thumbnails and social media links
 -->
 
+<a class="anchor" name="about">&nbsp;</a>
 
 <nav class="navbar-inverse navbar-fixed-top">
   <div class="container">
-    <ul class="nav navbar-nav text-uppercase">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#getintouch">Get In Touch</a></li>
-    </ul>
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fccp2-nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="fccp2-nav-collapse">
+      <ul class="nav navbar-nav text-uppercase">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#getintouch">Get In Touch</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
-
-<a class="anchor" name="about">&nbsp;</a>
-
     <div class="jumbotron">
         <div class="container">
             <h1 class="text-uppercase">John Appleseed <small>Designer</small></h1>
