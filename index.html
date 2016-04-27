@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
@@ -20,10 +20,14 @@
             padding-top: 50px;
             padding-bottom: 20px;
         }
+        .anchor {
+            padding-top: 60px;
+        }
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <script src="js/vendor/smoothscroll.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -33,12 +37,23 @@
         <![endif]-->
 
     <!-- PROJECT BRIEF
-Content needs to contain: About, Work, Education, Contact, Social
-Design must be single page w/ nav that clicks to anchors
 Content must include portfolio of work with thumbnails and social media links
 -->
 
-<a name="about"></a>
+
+<nav class="navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <ul class="nav navbar-nav text-uppercase">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#getintouch">Get In Touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<a class="anchor" name="about">&nbsp;</a>
+
     <div class="jumbotron">
         <div class="container">
             <h1 class="text-uppercase">John Appleseed <small>Designer</small></h1>
@@ -51,8 +66,7 @@ Content must include portfolio of work with thumbnails and social media links
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a name="work"></a>
-                <h2 class="text-uppercase">Work</h2>
+                <h2 class="text-uppercase">Work<a class="anchor" name="work">&nbsp;</a></h2>
             </div>
         </div>
         <div class="row">
@@ -74,20 +88,16 @@ Content must include portfolio of work with thumbnails and social media links
         </div>
         <div class="row">
           <div class="col-md-12">
-            <a href="" name="education"></a>
-            <h2 class="text-uppercase">Education</h2>
+            <h2 class="text-uppercase">Education<a class="anchor" name="education">&nbsp;</a></h2>
             <div class="panel panel-default">
               <div class="panel-body">
                 <dl class="dl-horizontal">
-                  <dt>School
+                  <dt>School</dt>
                     <dd>(Year) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus recusandae ab, pariatur est officia libero voluptatum illo veritatis molestiae eum.</dd>
-                  </dt>
-                  <dt>School
+                  <dt>School</dt>
                     <dd>(Year) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam molestias a recusandae quidem ut inventore id commodi facilis voluptates, eligendi.</dd>
-                  </dt>
-                  <dt>School
+                  <dt>School</dt>
                     <dd>(Year) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus enim corporis, officia blanditiis totam ipsum dicta a tenetur sequi impedit!</dd>
-                  </dt>
                 </dl>
               </div>
             </div>
@@ -95,7 +105,7 @@ Content must include portfolio of work with thumbnails and social media links
         </div>
     </div>
 
-<a name="getintouch"></a>
+<a class="anchor" name="getintouch"></a>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
