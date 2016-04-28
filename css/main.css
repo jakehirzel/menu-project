@@ -10,6 +10,13 @@ Mustard - #D9B507
 Taupe - #F2CA5D
 */
 
+/* Reset Bootstrap Link Styles */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #28A028;
+}
+
+
 /* To keep page scroll anchors from going under the sticky nav */
 .anchor {
     padding-top: 60px;
@@ -22,6 +29,12 @@ Taupe - #F2CA5D
     padding-top: 50px;
 }
 
+/* Create .jumbotron-flex to have a flex height but behave along the lines of modded .jumbotron */
+.jumbotron-flex {
+    height: auto;
+}
+
+
 /* Class to vertically cetner things in the viewport */
 .vcenter {
   position: relative;
@@ -32,21 +45,22 @@ Taupe - #F2CA5D
 /* Class to add bottom center nav helper buttons */
 .btm-btn {
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 50%;
   font-size: 5rem;
+}
+
+/* Class to make social icons from Simple-Line-Icons larger */
+.soc-btn {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+  font-size: 4rem;
 }
 
 /* Class to make items shrink on hover */
 .hvr-shrink {
   transition-duration: 0.1s;
 }
-.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active, .hvr-shrink a:hover, .hvr-shrink a:focus, .hvr-shrink a:active {
   transform: scale(0.9,0.9);
-}
-
-/* Class to make social icons from Simple-Line-Icons larger */
-.social-icons {
-  font-size: 4rem;
-  margin: 30px 0px;
 }
