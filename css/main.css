@@ -1,11 +1,23 @@
+/* Colors
+Dark Grey - #363636
+Light Grey - #ccc
+Pullman Green - #3C321E
+Hirzel Green - #28A028
+Hirzel-La Orange- #D98B07
+Blue - #0078AA
+BNSF Gold - #F0B414
+Mustard - #D9B507
+Taupe - #F2CA5D
+*/
 
 /* To keep page scroll anchors from going under the sticky nav */
 .anchor {
     padding-top: 60px;
 }
 
-/* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav */
+/* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav and to add ability to position elements within*/
 .jumbotron {
+    position: relative;
     height: 100vh;
     padding-top: 50px;
 }
@@ -15,4 +27,13 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* Class to add bottom center nav helper buttons */
+.btm-btn {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  right: 50%;
+  font-size: 5rem;
 }
