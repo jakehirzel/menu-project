@@ -42,5 +42,11 @@ Taupe - #F2CA5D
   transition-duration: 0.1s;
 }
 .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
-  transform: scale(0.8,0.8);
+  transform: scale(0.9,0.9);
+}
+
+/* Class to make social icons from Simple-Line-Icons larger */
+.social-icons {
+  font-size: 4rem;
+  margin: 30px 0px;
 }
