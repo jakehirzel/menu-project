@@ -11,6 +11,9 @@ Taupe - #F2CA5D
 */
 
 /* Reset Selected Bootstrap Styles */
+body {
+  font-weight: 200;
+}
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: #28A028;
@@ -28,6 +31,11 @@ a:link, a:visited, a:hover, a:active {
     min-height: 650px;
     padding-top: 50px;
     margin: 0;
+}
+@media (max-width: 767px) {
+  .jumbotron p {
+    font-size: 14px;
+  }
 }
 
 /* Create .jumbotron-flex to have a flex height but behave along the lines of modded .jumbotron */
