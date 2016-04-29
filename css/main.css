@@ -19,7 +19,6 @@ a:link, a:visited, a:hover, a:active {
   color: #28A028;
 }
 .container {
-  padding-top: 50px;
   padding-left: 50px;
 }
 
@@ -31,8 +30,9 @@ a:link, a:visited, a:hover, a:active {
 }
 #site-canvas {
   width: 100%;
-  height: 100%;
   position: relative;
+  top: 0;
+  left: 0;
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: 0.3s ease all;
@@ -41,11 +41,14 @@ a:link, a:visited, a:hover, a:active {
 #site-menu {
   width: 300px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -300px;
   background: purple;
-  padding: 15px;
+  padding-left: 55px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 #site-wrapper.show-nav #site-canvas {
   -webkit-transform: translateX(300px);
@@ -61,7 +64,7 @@ a:link, a:visited, a:hover, a:active {
 }
 /* To keep page scroll anchors from being at the tippy top */
 .anchor {
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 /* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav and to add ability to position elements within*/
