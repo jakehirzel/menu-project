@@ -32,34 +32,13 @@
   <div id="site-canvas">
     <div id="site-menu">
       <h2>This is my baller menu.</h2>
-      <ul>
-        <li>Shizz</li>
-        <li>Shizz</li>
-        <li>Shizz</li>
-        <li>Shizz</li>
-        <li>Shizz</li>
+      <ul class="nav navbar-nav text-uppercase">
+          <li class="hvr-shrink"><a href="#about">About</a></li>
+          <li class="hvr-shrink"><a href="#work">Work</a></li>
+          <li class="hvr-shrink"><a href="#getintouch">Get In Touch</a></li>
       </ul>
     </div>
-
-    <header id="about">
-        <nav class="navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fccp2-nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="fccp2-nav-collapse">
-                    <ul class="nav navbar-nav text-uppercase">
-                        <li class="hvr-shrink"><a href="#about">About</a></li>
-                        <li class="hvr-shrink"><a href="#work">Work</a></li>
-                        <li class="hvr-shrink"><a href="#getintouch">Get In Touch</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="jumbotron">
+    <div class="jumbotron" id="about">
         <div class="container vcenter">
             <row>
                 <div class="col-sm-3 hidden-xs">
@@ -154,14 +133,26 @@
 
     <script>
       var main = function() {
-        // Implement sliding menu
-        $('.toggle-nav').click(function() {
+        // Create toggleNav
+        function toggleNav() {
           if ($('#site-wrapper').hasClass('show-nav')) {
             $('#site-wrapper').removeClass('show-nav');
           }
           else {
             $('#site-wrapper').addClass('show-nav');
-          };
+          }
+        }
+        // Implement toggleNav on click
+        $('.toggle-nav').click(function() {
+          toggleNav();
+        });
+        // Add Esc functionality to sliding menu
+        $(document).keyup(function(e) {
+          if (e.keyCode == 27) {
+            if ($('#site-wrapper').hasClass('show-nav')) {
+              toggleNav();
+            }
+          }
         });
       };
       $(document).ready(main);
