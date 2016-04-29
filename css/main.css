@@ -48,9 +48,9 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(300px);
 }
 
-/* To keep page scroll anchors from going under the sticky nav */
+/* To keep page scroll anchors from being at the tippy top */
 .anchor {
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 /* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav and to add ability to position elements within*/
