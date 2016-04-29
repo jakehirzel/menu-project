@@ -41,7 +41,7 @@ a:link, a:visited, a:hover, a:active {
 #site-menu {
   width: 300px;
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -300px;
   background: purple;
