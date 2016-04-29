@@ -48,6 +48,13 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(300px);
 }
 
+/* Create .hamburger to style and locate the menu button */
+.hamburger {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  z-index: 100;
+}
 /* To keep page scroll anchors from being at the tippy top */
 .anchor {
     padding-top: 10px;
