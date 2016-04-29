@@ -10,13 +10,17 @@ Mustard - #D9B507
 Taupe - #F2CA5D
 */
 
-/* Reset Selected Bootstrap Styles */
+/* Tweak Selected Bootstrap Styles */
 body {
   font-weight: 200;
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: #28A028;
+}
+.container {
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 /* Create #site-wrapper #site-canvas and #site-menu to accommodate sliding nav */
@@ -57,7 +61,7 @@ a:link, a:visited, a:hover, a:active {
 }
 /* To keep page scroll anchors from being at the tippy top */
 .anchor {
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 /* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav and to add ability to position elements within*/
