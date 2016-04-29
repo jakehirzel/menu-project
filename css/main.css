@@ -10,28 +10,30 @@ Mustard - #D9B507
 Taupe - #F2CA5D
 */
 
-/* Reset Bootstrap Link Styles */
+/* Reset Selected Bootstrap Styles */
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: #28A028;
 }
 
-
 /* To keep page scroll anchors from going under the sticky nav */
 .anchor {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 /* Mod of existing .jumbotron to make it 100vh and play nicely with sticky nav and to add ability to position elements within*/
 .jumbotron {
     position: relative;
     height: 100vh;
+    min-height: 650px;
     padding-top: 50px;
+    margin: 0;
 }
 
 /* Create .jumbotron-flex to have a flex height but behave along the lines of modded .jumbotron */
 .jumbotron-flex {
     height: auto;
+    min-height: 300px;
 }
 
 
