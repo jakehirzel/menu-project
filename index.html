@@ -37,10 +37,13 @@
   </div>
   <div id="site-menu">
     <ul class="nav text-center text-uppercase">
-        <li class="hvr-shrink"><a href="#about">About</a></li>
+        <li class="hvr-shrink current"><a href="#about">About</a></li>
         <li class="hvr-shrink"><a href="#work">Work</a></li>
         <li class="hvr-shrink"><a href="#getintouch">Get In Touch</a></li>
     </ul>
+  </div>
+  <div class="btm-btn hvr-shrink">
+      <a href="" role="button"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
   </div>
   <div id="site-canvas">
     <div class="jumbotron" id="about">
@@ -57,10 +60,7 @@
                 </div>
             </row>
         </div>
-        <div class="btm-btn hvr-shrink">
-            <a href="#work" role="button"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
-        </div>
-    </div>
+      </div>
     <div class="container form-group">
         <div class="row">
             <div class="col-md-12">
@@ -120,9 +120,6 @@
                 </div>
             </div>
         </div>
-        <div class="btm-btn hvr-shrink">
-            <a href="#about" role="button"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
-        </div>
     </div>
     </div>
 </div>
@@ -161,6 +158,29 @@
         // Animate .hamburger
         $('.hamburger').click(function() {
           $(this).toggleClass('is-active');
+        });
+        // Make downward arrow iterate through nav items
+        $('.btm-btn a').click(function() {
+          if ($('ul.nav li.current').next('li').length > 0) {
+            var aHref = $('ul.nav li.current').next().children('a').attr('href');
+            $('.btm-btn a').attr("href", aHref);
+            $('ul.nav li.current').removeClass('current').next('li').addClass('current');
+            }
+            else {
+              var aHref = $('ul.nav li').first().children('a').attr('href');
+              $('.btm-btn a').attr("href", aHref);
+              $('ul.nav li.current').removeClass('current');
+              $('ul.nav li').first().addClass('current');
+            };
+        });
+        // Make downward arrow reset direction at top and bottom
+        $('.btm-btn a').click(function() {
+          if ($('ul.nav li').last().hasClass('current')) {
+            $('.btm-btn a i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+          }
+          else if ($('ul.nav li').first().hasClass('current')) {
+            $('.btm-btn a i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+          }
         });
       };
       $(document).ready(main);
