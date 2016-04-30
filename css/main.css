@@ -27,12 +27,14 @@ a:link, a:visited, a:hover, a:active {
   position: relative;
   overflow: hidden;
   width: 100%;
+  z-index: 30;
 }
 #site-canvas {
   width: 100%;
   position: relative;
   top: 0;
   left: 0;
+  z-index: 20;
   background-color: white;
   transform: translateX(0);
   transition: 0.3s ease all;
@@ -43,7 +45,7 @@ a:link, a:visited, a:hover, a:active {
   position: fixed;
   top: 0;
   left: 0px;
-  z-index: -50;
+  z-index: 10;
   background: purple;
   padding-left: 55px;
   padding-top: 50px;
