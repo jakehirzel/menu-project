@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/smoothscroll.js"></script>
@@ -29,8 +30,10 @@
         <![endif]-->
 
 <div id="site-wrapper">
-  <div class="hamburger">
-    <a href="#" class="toggle-nav"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+  <div class="menu-btn hvr-shrink">
+    <a href="#" class="toggle-nav hamburger hamburger--arrow" role="button" aria-label="Menu" aria-controls="navigation">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </a>
   </div>
   <div id="site-menu">
     <ul class="nav text-center text-uppercase">
@@ -154,6 +157,10 @@
               toggleNav();
             }
           }
+        });
+        // Animate .hamburger
+        $('.hamburger').click(function() {
+          $(this).toggleClass('is-active');
         });
       };
       $(document).ready(main);

@@ -56,8 +56,8 @@ a:link, a:visited, a:hover, a:active {
   transform: translateX(300px);
 }
 
-/* Create .hamburger to style and locate the menu button */
-.hamburger {
+/* Create .menu-btn to style and locate the menu button */
+.menu-btn {
   position: fixed;
   top: 10px;
   left: 15px;
